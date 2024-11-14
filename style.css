@@ -1,0 +1,23 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    gap: 10px;
+}
+
+#map1 {
+    height: 100%;
+    width: 50%;
+}
+
+#map2 {
+    height: 100%;
+    width: 50%;
+}
+
