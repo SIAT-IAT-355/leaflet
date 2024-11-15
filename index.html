@@ -1,25 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <!-- Meta Tags for SEO and Responsiveness -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Leaflet Maps</title>
+
+    <!-- Favicon (Optional) -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- Leaflet CSS -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
-    crossorigin=""/>
-    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
-    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
-    crossorigin=""></script>
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+
+    <!-- D3.js -->
     <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
 
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
-    <title>Leaflet map</title>
 </head>
+
 <body>
-    <div class="container">
-    <div id="map1"></div>
-    <div id="map2"></div>
-</div>
-    <script type="text/javascript" src="map.js"></script>
-    <script type="text/javascript" src="geojson.js"></script>
+    <!-- Header Section -->
+    <header>
+        <h1>Interactive Leaflet Maps</h1>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <div class="container">
+            <!-- Vancouver Map Section -->
+            <section id="vancouver-map" aria-label="Map of Vancouver">
+                <h2>Vancouver Map</h2>
+                <div id="map1"></div>
+            </section>
+
+            <!-- Choropleth Map Section -->
+            <section id="choropleth-map" aria-label="Choropleth Map of Sleep Hours by Country">
+                <h2>Global Sleep Hours</h2>
+                <div id="map2"></div>
+            </section>
+        </div>
+    </main>
+
+
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+
+    <!-- Custom JavaScript Files -->
+    <script src="map.js" defer></script>
+    <script src="geojson.js" defer></script>
 </body>
+
 </html>
